@@ -11,20 +11,16 @@ export default function App() {
 
       {index && <Loader />}
       <BrowserRouter>
-        {/* <Routes>
-          <Route path="/login" element={<LoginPage />}></Route>
-          <Route path="/" element={<h1>Profile page</h1>}></Route>
-          <Route path="*" element={<ErrorPage />}></Route>
-        </Routes> */}
-
-
         <Routes>
-          
-          <Route path="/" element={<h1>Profile Page</h1>} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="*" element={<ErrorPage />} />
-          <Route path="" element={<Navigate to="/login" replace />} />
+          <Route path="/" element={<Navigate to="/login" replace />} />
+          <Route path="/profile" element={<h1>Profile page</h1>}></Route>
+          <Route path="/login" element={<LoginPage />}></Route>
+          <Route path="*" element={<ErrorPage />}></Route>
+
         </Routes>
+
+
+
       </BrowserRouter>
 
     </div>

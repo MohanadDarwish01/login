@@ -61,7 +61,7 @@ export default function LoginPage() {
                             timer: 1500
                         }).then(() => {
                             close();
-                            navegate('/');
+                            navegate('/profile');
                         });
                     }, 2000)
 
